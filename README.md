@@ -71,18 +71,18 @@ Running the following two commands to sample the permutation and transform the c
 ```shell
 PROCEDURE=offpolicy CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 VLLM_WORKER_MULTIPROC_METHOD=spawn  \
 python ./src/run.py \
---devices 0,1,2,3,4,5,6,7 \
---data_path  ./example/nq_train_examples.json \
---ranker_name  RANKING_MODEL_PATH \
---generator_name  LLM_GENERATOR_MODEL_PATH \
---k_positive 0 \
---k_retrieval 20 \
---sampling_num 16 \
---batch_size 16 \
---cutoff_len 8192 \
---output_folder  ./example \
---left 0 \
---right 1000 
+    --devices 0,1,2,3,4,5,6,7 \
+    --data_path  ./example/nq_train_examples.json \
+    --ranker_name  RANKING_MODEL_PATH \
+    --generator_name  LLM_GENERATOR_MODEL_PATH \
+    --k_positive 0 \
+    --k_retrieval 20 \
+    --sampling_num 16 \
+    --batch_size 16 \
+    --cutoff_len 8192 \
+    --output_folder  ./example \
+    --left 0 \
+    --right 1000 
 ```
 Below shows a permutation samples.
 ```json
