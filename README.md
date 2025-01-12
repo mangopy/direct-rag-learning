@@ -47,21 +47,21 @@ You can deploy the ColBERT retrieval or other customized retrieval model in your
 ## Unified the format
 We use the code in `./src/prepare/prepare.py` to pre-process the raw datasets. Below shows an concrete example in our reformatted datasets.
 ```json
-    {
-        "question": "where do the great lakes meet the ocean",
-        "answer": "the Saint Lawrence River",
-        "positive": [
-            "Title: Great Lakes. Content: Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway. The Great Lakes are the largest group of freshwater lakes on Earth by total area, and second largest",
-            "Title: Great Lakes. Content: Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway. The Great Lakes are the largest group of freshwater lakes on Earth by total area, and second largest"
-        ],
-        "query_id": "query_1",
-        "retrieval": [
-            "Title: \"Great Lakes\" Text:  Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway.",
-            "Title: \"Great Lakes\" Text:  The surrounding region is called the Great Lakes region, which includes the Great Lakes Megalopolis. Though the five lakes lie in separate basins, they form a single, naturally interconnected body of fresh water, within the Great Lakes Basin. They form a chain connecting the east-central interior of North America to the Atlantic Ocean. From the interior to the outlet at the Saint Lawrence River, water flows from Superior to Huron and Michigan, southward to Erie, and finally northward to Lake Ontario. The lakes drain a large watershed via many rivers, and are studded with approximately 35,000 islands.",
-            "...",
-            "Title: \"Great Lakes region\" Text:  The Commission's authorities are confirmed by the Canadian and American federal governments, and by its constituent states and provinces. The states and provinces are represented in the Conference of Great Lakes and St. Lawrence Governors and Premiers. The Great Lakes region takes its name from the corresponding geological formation of the Great Lakes Basin, a narrow watershed encompassing The Great Lakes, bounded by watersheds to the region's north (Hudson Bay), west (Mississippi), east and south (Ohio). To the east, the rivers of St. Lawrence, Richelieu, Hudson, Mohawk and Susquehanna form an arc of watersheds east to The Atlantic."
-        ]
-    }
+{
+    "question": "where do the great lakes meet the ocean",
+    "answer": "the Saint Lawrence River",
+    "positive": [
+        "Title: Great Lakes. Content: Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway. The Great Lakes are the largest group of freshwater lakes on Earth by total area, and second largest",
+        "Title: Great Lakes. Content: Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway. The Great Lakes are the largest group of freshwater lakes on Earth by total area, and second largest"
+    ],
+    "query_id": "query_1",
+    "retrieval": [
+        "Title: \"Great Lakes\" Text:  Great Lakes The Great Lakes (), also called the Laurentian Great Lakes and the Great Lakes of North America, are a series of interconnected freshwater lakes located primarily in the upper mid-east region of North America, on the Canada\u2013United States border, which connect to the Atlantic Ocean through the Saint Lawrence River. They consist of Lakes Superior, Michigan, Huron, Erie, and Ontario, although hydrologically, there are four lakes, Superior, Erie, Ontario, and Michigan-Huron. The lakes are interconnected by the Great Lakes Waterway.",
+        "Title: \"Great Lakes\" Text:  The surrounding region is called the Great Lakes region, which includes the Great Lakes Megalopolis. Though the five lakes lie in separate basins, they form a single, naturally interconnected body of fresh water, within the Great Lakes Basin. They form a chain connecting the east-central interior of North America to the Atlantic Ocean. From the interior to the outlet at the Saint Lawrence River, water flows from Superior to Huron and Michigan, southward to Erie, and finally northward to Lake Ontario. The lakes drain a large watershed via many rivers, and are studded with approximately 35,000 islands.",
+        "...",
+        "Title: \"Great Lakes region\" Text:  The Commission's authorities are confirmed by the Canadian and American federal governments, and by its constituent states and provinces. The states and provinces are represented in the Conference of Great Lakes and St. Lawrence Governors and Premiers. The Great Lakes region takes its name from the corresponding geological formation of the Great Lakes Basin, a narrow watershed encompassing The Great Lakes, bounded by watersheds to the region's north (Hudson Bay), west (Mississippi), east and south (Ohio). To the east, the rivers of St. Lawrence, Richelieu, Hudson, Mohawk and Susquehanna form an arc of watersheds east to The Atlantic."
+    ]
+}
 ```
 
 
