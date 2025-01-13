@@ -123,7 +123,7 @@ We provide example files on `./example` folder.
 
 ## M-step: Maximization
 ```shell
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun  --nproc_per_node=8 --master_port=9011 src/run.py \
+TRAINER=weight PROCEDURE=train CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7  nohup torchrun  --nproc_per_node=8 --master_port=11020 ./src/run.py \
     --model_name_or_path  \
     --dataset_name_or_path TRAINING_DATASET_PATH \
     --deepspeed ./scripts/ds_z3_config.json \
