@@ -3,7 +3,7 @@
    <h1>Direct Retrieval-augmented Optimization</h1>
 </div>
 
-This work aims to optimize the holistic RAG performance, synergizing the retrieval process and generation process.
+This work aims to optimize the holistic RAG performance, synergizing two key processes of RAG, including (i) knowledge selection and (2) answer generation process.
 
 <div align="center">
 <img src="assets/method.png" >
