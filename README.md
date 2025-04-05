@@ -3,7 +3,6 @@
   <img src="./assets/background.png" width="80%" alt="Self-Play for Selector-Generator Synergy">
 </p>
 
-
 <div align="center">
    <h1>Direct Retrieval-augmented Optimization</h1>
 </div>
