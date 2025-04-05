@@ -1,7 +1,13 @@
 
+<p align="center">
+  <img src="./assets/background.png" width="80%" alt="Self-Play for Selector-Generator Synergy">
+</p>
+
+
 <div align="center">
    <h1>Direct Retrieval-augmented Optimization</h1>
 </div>
+
 
 This work aims to optimize the holistic RAG performance, synergizing two key processes of RAG, including (i) knowledge selection and (2) answer generation process.
 
