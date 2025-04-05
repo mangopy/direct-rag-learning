@@ -32,13 +32,13 @@ wandb login
 ## Download raw dataset
 
 
-| Dataset             | Note                                                                                                                                     |                                                   Link                                                    |
-| :------------------ |:-----------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------:|
-| Nature Question     | [Natural Questions: A Benchmark for Question Answering Research](https://aclanthology.org/Q19-1026/)                                     | [Github](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py) (click the NQ link) |
-| HotpotQA            | [HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering](https://arxiv.org/abs/1809.09600)                            |                                  [Homepage](https://hotpotqa.github.io/)                                  |
-| MuSiQue             | [MuSiQue: Multihop Questions via Single-hop Question Composition](https://arxiv.org/abs/2108.00573)                                      |                            [Github](https://github.com/StonyBrookNLP/musique)                             |
-| 2WikiMultihopQA     | [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://aclanthology.org/2020.coling-main.580.pdf) |                            [Github](https://github.com/Alab-NII/2wikimultihop)                            |
-| Wizard of Wikipedia | [Wizard of Wikipedia: Knowledge-Powered Conversational agents](https://arxiv.org/abs/1811.01241)                                         |   [Google drive](https://drive.google.com/file/d/1z327WOKr70rC4UfOlQVBQnuLxChi_uPs/view?usp=share_link)   |
+| Dataset             | Note                                                                                                                                     |                                                     Link                                                      |
+| :------------------ |:-----------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------:|
+| Nature Question     | [Natural Questions: A Benchmark for Question Answering Research](https://aclanthology.org/Q19-1026/)                                     | [Github](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py)<br/>(click the NQ link) |
+| HotpotQA            | [HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering](https://arxiv.org/abs/1809.09600)                            |                                    [Homepage](https://hotpotqa.github.io/)                                    |
+| MuSiQue             | [MuSiQue: Multihop Questions via Single-hop Question Composition](https://arxiv.org/abs/2108.00573)                                      |                              [Github](https://github.com/StonyBrookNLP/musique)                               |
+| 2WikiMultihopQA     | [Constructing A Multi-hop QA Dataset for Comprehensive Evaluation of Reasoning Steps](https://aclanthology.org/2020.coling-main.580.pdf) |                              [Github](https://github.com/Alab-NII/2wikimultihop)                              |
+| Wizard of Wikipedia | [Wizard of Wikipedia: Knowledge-Powered Conversational agents](https://arxiv.org/abs/1811.01241)                                         |     [Google drive](https://drive.google.com/file/d/1z327WOKr70rC4UfOlQVBQnuLxChi_uPs/view?usp=share_link)     |
 
 ## Retrieval Corpus
 We follow previous work and use the Wikipedia as our document corpus, which can be found in [DPR](https://github.com/facebookresearch/DPR/blob/main/dpr/data/download_data.py) repo ([Link](https://dl.fbaipublicfiles.com/dpr/wikipedia_split/psgs_w100.tsv.gz)).
