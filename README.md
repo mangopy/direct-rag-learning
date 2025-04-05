@@ -8,7 +8,7 @@
 </div>
 
 
-This work aims to optimize the holistic RAG performance, synergizing two key processes of RAG, including (i) knowledge selection and (2) answer generation process.
+Retrieval-augmented generation (RAG) is powerful but still limited by a lack of synergy between knowledge selection and answer generation process. Our project introduces a novel framework named Direct Retrieval-augmented Optimization (DRO) that brings Selector and Generator into one collaborative loop, allowing them to learn from each other and optimize jointly. Forget one-sided fine-tuning—we enable mutual enhancement for better factuality, relevance, and performance. If you're working on knowledge-grounded LLMs, this is a drop-in upgrade you don't want to miss.
 
 <div align="center">
 <img src="assets/method.png" >
