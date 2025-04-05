@@ -8,6 +8,7 @@ If you like our project, please give us a star ⭐ on GitHub for the latest upda
 <div align="center">
    <h1>Direct Retrieval-augmented Optimization</h1>
 </div>
+</div>
 
 
 Retrieval-augmented generation (RAG) is powerful but still limited by a lack of synergy between knowledge selection and answer generation process. Our project introduces a novel framework named Direct Retrieval-augmented Optimization (DRO) that brings Selector and Generator into one collaborative loop, allowing them to learn from each other and optimize jointly. Forget one-sided fine-tuning—we enable mutual enhancement for better factuality, relevance, and performance. If you're working on knowledge-grounded LLMs, this is a drop-in upgrade you don't want to miss.
@@ -201,7 +202,9 @@ You can directly download our pre-processed training data. We process these benc
 | wikimultihop_train.json | Training data of the 2WikimultihopQA dataset     | [Google drive](https://drive.google.com/file/d/1D6PRMwaj-7ilXajz70OP54h8KNWwOV8l/view?usp=sharing) |
 | wow_train.json          | Training data of the Wizard-of-Wikipedia dataset | [Google drive](https://drive.google.com/file/d/1bv6BK_eWRch60gP5rJ-Q_gPbUQI_EOxZ/view?usp=sharing) |
 
-### 
+## Todo
+
+- [ ] add the command for evaluation
 
 
 ## Acknowledgement
