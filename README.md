@@ -1,6 +1,9 @@
-## Direct Retrieval-augmented Optimization
 
-Code for our submission. This work aims to optimize the holistic RAG performance, synergizing the retrieval process and generation process.
+<div align="center">
+   <h1>Direct Retrieval-augmented Optimization</h1>
+</div>
+
+This work aims to optimize the holistic RAG performance, synergizing the retrieval process and generation process.
 
 <div align="center">
 <img src="assets/method.png" >
@@ -10,9 +13,11 @@ Code for our submission. This work aims to optimize the holistic RAG performance
 1. create the `python` env with `conda`
 ```txt
 conda create -n rag python=3.10
-conda activate rag
+conda activate dro
 pip install -r requirements.txt
 pip install pytrec_eval -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+conda activate dro
 ```
 
 2. [Optional] set the `vllm` environment variable when using it.
@@ -28,7 +33,7 @@ wandb login
 
 
 # Dataset
-## Download raw dataset
+
 ## Download raw dataset
 
 
@@ -144,15 +149,25 @@ TRAINER=weight PROCEDURE=train CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7  nohup torch
     --bf16 True
 ```
 
+## Warmup learning for answer generator and document selector
+
+The warm-up learning aims to initialize the LLM with basic skills, which can fit the LLM into downstream tasks better.
+In this work, we achieve the warm-up for both answer generator and document selector through supervised fine-tuning.
+
+1. To achieve the warm-up of answer generator, you can download the dataset from our [Google drive](https://drive.google.com/file/d/1VN8fnFvNj6DmlMaf4qE_cWBVkd72_Zp-/view?usp=sharing) to train the base LLM.
+
+2. To achieve the warm-up of document selector, please download generative ranking dataset from [RankZephyr](https://huggingface.co/datasets/castorini/rank_zephyr_training_data) to train the base LLM.
+
 ## Evaluation on Benchmarks
 
 We evaluate our method using the `EM` and `F1` metrics. We use the evaluation scripts from official [KILT](https://github.com/facebookresearch/KILT/blob/main/kilt/eval_downstream.py).
 
 
 ## Pre-processed Data
+
 ### Download pre-processed evaluation data
 
-You can directly download our pre-processed datasets, which will be provided after the anonymous period.
+You can directly download our pre-processed benchmarks. We process these benchmark into a unified format, which is more convenient for evaluation.
 
 | File                  | Note                                                  |                                                Link                                                |
 | :-------------------- | :---------------------------------------------------- |:--------------------------------------------------------------------------------------------------:|
@@ -163,6 +178,8 @@ You can directly download our pre-processed datasets, which will be provided aft
 | wow_dev.json          | Pre-processed data of the Wizard-of-Wikipedia dataset | [Google drive](https://drive.google.com/file/d/1B2qSjEzR5w_AG1nZQVEKzeLbCvOCQPLd/view?usp=sharing) |
 
 ### Download pre-processed training data
+
+You can directly download our pre-processed training data. We process these benchmark into a unified format, which is more convenient for evaluation.
 
 | File                    | Note                                             |                                                Link                                                |
 | :---------------------- | :----------------------------------------------- |:--------------------------------------------------------------------------------------------------:|
