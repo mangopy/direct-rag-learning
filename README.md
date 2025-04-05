@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img src="./assets/background.png" width="80%" alt="Self-Play for Selector-Generator Synergy">
+  <img src="./assets/background.png" width="100%" alt="Self-Play for Selector-Generator Synergy">
 </p>
 
 <div align="center">
