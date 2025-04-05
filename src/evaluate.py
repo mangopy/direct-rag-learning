@@ -205,7 +205,7 @@ def commend_eval():
     for i, line in enumerate(tqdm(data)):
         candidate = collect_docs(line, args.k_positive, args.k_retrieval)
         if args.shuffle:
-            random.shuffle(candidate) # shuffle  47.526.   44.044
+            random.shuffle(candidate)
         instructions.append({
             "query_id": line['query_id'] if 'query_id' in line else '',
             "instruction": rank_instruction(question=line['question'], docs=candidate)
