@@ -3,6 +3,8 @@
   <img src="./assets/background.png" width="100%" alt="Self-Play for Selector-Generator Synergy">
 </p>
 
+If you like our project, please give us a star ⭐ on GitHub for the latest update.
+
 <div align="center">
    <h1>Direct Retrieval-augmented Optimization</h1>
 </div>
