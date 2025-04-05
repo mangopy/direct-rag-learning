@@ -167,7 +167,7 @@ In this work, we achieve the warm-up for both answer generator and document sele
 
 We evaluate our method using the `EM` and `F1` metrics. We use the evaluation scripts from official [KILT](https://github.com/facebookresearch/KILT/blob/main/kilt/eval_downstream.py).
 
-The main experiment results are as follows, where we compare the proposed DRO with 25+ baselines on a wide range of benchmarks, including open-domain QA, multi-hop QA and knowledge-grounded dialogue tasks.
+The main experiment results are as follows, where we compare the proposed DRO with **25+ baselines** on a wide range of benchmarks, including open-domain QA, multi-hop QA and knowledge-grounded dialogue tasks.
 
 <p align="center">
   <img src="./assets/results.png" width="90%">
