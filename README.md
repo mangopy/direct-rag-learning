@@ -205,6 +205,7 @@ You can directly download our pre-processed training data. We process these benc
 ## Todo
 
 - [ ] add the command for evaluation
+- [ ] Our paper will be released as soon as possible!
 
 
 ## Acknowledgement
