@@ -11,8 +11,7 @@ If you like our project, please give us a star ⭐ on GitHub for the latest upda
 </div>
 
 
-Retrieval-augmented generation (RAG) is powerful but still limited by a lack of synergy between knowledge selection and answer generation process. Our project introduces a novel framework named Direct Retrieval-augmented Optimization (DRO) that brings Selector and Generator into one collaborative loop, allowing them to learn from each other and optimize jointly. Forget one-sided fine-tuning—we enable mutual enhancement for better factuality, relevance, and performance. If you're working on knowledge-grounded LLMs, this is a drop-in upgrade you don't want to miss.
-
+Retrieval-augmented generation (RAG) is powerful but still limited by a lack of synergy between knowledge selection and answer generation process. Our project introduces a novel framework named Direct Retrieval-augmented Optimization (DRO) that brings Selector and Generator into one collaborative loop, allowing them to learn from each other and optimize jointly. Forget one-sided fine-tuning—we enable mutual enhancement for better factuality, relevance, and performance. If you're working on knowledge-grounded LLMs, this is a drop-in upgrade you don't want to miss. Please checkout our <a href="https://arxiv.org/abs/2505.03075>paper</a> for more details.
 <div align="center">
 <img src="assets/method.png" >
 </div>
