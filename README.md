@@ -15,6 +15,13 @@ Retrieval-augmented generation (RAG) is powerful but still limited by a lack of 
 <img src="assets/method.png" >
 </div>
 
+## News
+
+- **[2026.1.13]** Our paper has been accepted by the [TOIS 2026](https://dl.acm.org/journal/tois) 🎉🎉🎉!
+- **[2025.5.05]** The first version of our paper has been released in arxiv. See our paper in this [link](https://arxiv.org/abs/2505.03075).
+- **[2025.2.01]**  Our code was released, including main code for evaluation and training script. 
+
+
 ## Environment
 1. create the `python` env with `conda`
 ```txt
